@@ -100,18 +100,17 @@ em { font-family: var(--serif); font-weight: 400; letter-spacing: -.07em; }
 
 @media (max-width: 700px) {
   .section-wrap { width: min(100% - 40px, 1180px); }
-  .site-header { padding: 20px; }
+  .site-header { display: none; }
   .site-nav { display: none; }
   .header-resume { font-size: .65rem; }
-  .hero { min-height: 650px; padding-top: 80px; }
-  .hero::before { height: 230px; right: -70px; top: 145px; width: 230px; }
+  .hero { min-height: 520px; padding-top: 10px; }
+  .hero-kicker, .hero::before, .hero-aside { display: none; }
   .hero-grid, .story-copy, .now-grid, .footer-grid { gap: 35px; grid-template-columns: 1fr; }
-  .hero-grid { margin-top: 48px; }
+  .hero-grid { margin-top: 0; }
   .identity-block { margin-bottom: 42px; padding-left: 14px; }
-  .identity-name { font-size: clamp(1.45rem, 7vw, 2rem); letter-spacing: .05em; }
+  .identity-name { font-size: 2.8rem; letter-spacing: .08em; }
   .identity-degree, .identity-college { font-size: .59rem; letter-spacing: .08em; }
   h1 { font-size: clamp(3.8rem, 19vw, 7rem); }
-  .hero-aside { max-width: 310px; }
   .hero-footnote span:nth-child(2) { display: none; }
   .story, .work, .now, .footer { padding-bottom: 90px; }
   .story-copy, .now-grid, .footer-grid { margin: 65px 0 0; }
